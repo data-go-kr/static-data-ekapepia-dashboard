@@ -26,6 +26,7 @@ namespace dashboard.Pages
 
         public void OnGet()
         {
+            base.ViewData["Title"] = this.Id;
             this.Items = new Models.Item[] { };
 
             var _Body = string.Empty;
